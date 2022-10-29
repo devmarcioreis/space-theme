@@ -25,6 +25,7 @@
     --text-color-light: hsl(22, 4%, 55%);
     --body-color: hsl(22, 8%, 6%);
     --container-color: hsl(22, 8%, 7%);
+    --transparent-color: rgba(0, 0, 0, 0);
 
     --body-font: 'Space Grotesk', sans-serif;
     --second-font: 'Butcherman', cursive;
@@ -130,3 +131,88 @@ img {
 }
 
 /*==========Header==========*/
+.header {
+    position: fixed;
+    width: 100%;
+    background: var(--transparent-color);
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    transition: background .3s, box-shadow .3s ;
+}
+.nav {
+    position: relative;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__logo, .nav__toggle, .nav__close {
+    display: inline-flex;
+    color: var(--white-color);
+}
+.nav__logo {
+    align-items: center;
+    column-gap: .5rem;
+    font-weight: var(--font-medium);
+    transition: color .3s;
+    font-size: 20px;
+}
+.nav__logo img {
+    width: 20px;
+}
+.nav__logo:hover {
+    color: var(--first-color);
+}
+.nav__toggle {
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+/*==========Media Query==========*/
+@media (max-width: 768px) {
+    .nav__menu {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        box-shadow: 0 4px 8px hsla(22, 10%, 2%, .5);
+        backdrop-filter: blur(20px);
+        padding-block: 3.5rem 3rem;
+        border-radius: 0 0 2rem 2rem;
+        transition: top .4s;
+    }
+}
+
+.nav__list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 1.5rem;
+}
+.nav__link {
+    color: var(--white-color);
+    transition: color .4s;
+    font-weight: var(--font-bold);
+}
+.nav__link:hover {
+    color: var(--first-color);
+}
+.nav__close {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+.nav__img {
+    position: absolute;
+    width: 180px;
+    top: 45%;
+    left: -1rem;
+}
+
+/*==========JavaScript==========*/
+.show-menu {
+    top: 0;
+}
