@@ -287,9 +287,10 @@ img {
     margin-bottom: 2.5rem;
 }
 .home__img {
-    width: 300px;
+    width: 250px;
     justify-self: center;
     margin-top: 1.5rem;
+    animation: spin 60s linear infinite;
 }
 .home__planet-1, .home__planet-2 {
     width: 120px;
@@ -344,5 +345,12 @@ img {
     100% {
         transform: scale(1) rotate(15deg);
         opacity: 1;
+    }
+}
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
     }
 }
