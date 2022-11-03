@@ -428,3 +428,44 @@ img {
     top: 2rem;
     right: -3rem;
 }
+
+/*==========Gallery==========*/
+.gallery {
+    position: relative;
+}
+.gallery__container {
+    padding-top: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    gap: 4rem 1.5rem;
+}
+.gallery__card {
+    position: relative;
+    background: rgba(9, 11, 11, 0.747);
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px hsla(180, 12%, 4%, .3);
+    padding: 4rem 1.25rem 1.25rem;
+    text-align: center;
+}
+.gallery__img {
+    position: absolute;
+    width: 100px;
+    inset: 0;
+    top: -2rem;
+    margin: 0 auto;
+    transition: transform .3s;
+}
+.gallery__card:hover .gallery__img {
+    transform: translateY(-.5rem);
+}
+.gallery__name {
+    margin-top: 1rem;
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+}
+.gallery .big {
+    bottom: -8rem;
+    left: -8rem;
+}
+
+/*==========Footer==========*/
