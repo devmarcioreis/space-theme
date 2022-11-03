@@ -766,7 +766,7 @@ img {
         right: -7rem;
     }
     .category__container {
-        grid-template-columns: repeat(2, 700px);
+        grid-template-columns: repeat(2, 450px);
         gap: 5rem;
     }
     .category__title {
@@ -776,16 +776,16 @@ img {
         font-size: var(--h3-font-size);
     }
     .about__container {
-        grid-template-columns: repeat(2, 800px);
+        grid-template-columns: repeat(2, 500px);
     }
     .about__description {
         font-size: var(--h3-font-size);
     }
     .gallery__container {
-        grid-template-columns: repeat(3, 500px);
+        grid-template-columns: repeat(3, 300px);
     }
     .footer__container {
-        gap: 10rem;
+        gap: 5rem;
     }
     .footer__description, .footer__link, .footer__copy {
         font-size: var(--h3-font-size);
@@ -794,3 +794,5 @@ img {
         font-size: 1.7rem;
     }
 }
+
+
