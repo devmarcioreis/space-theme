@@ -28,7 +28,6 @@
     --transparent-color: rgba(0, 0, 0, 0);
 
     --body-font: 'Space Grotesk', sans-serif;
-    --second-font: 'Butcherman', cursive;
   
     --biggest-font-size: 2rem;
     --h1-font-size: 1.5rem;
@@ -94,7 +93,6 @@ img {
 }
 .section__title {
     font-size: var(--h1-font-size);
-    font-family: var(--second-font);
     font-weight: initial;
     line-height: 130%;
     color: var(--first-color);
@@ -350,7 +348,9 @@ img {
 
 @keyframes spin {
     100% {
-        -webkit-transform: rotate(360deg);
         transform: rotate(360deg);
     }
 }
+
+
+/*==========Planets==========*/
