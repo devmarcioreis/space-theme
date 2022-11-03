@@ -592,7 +592,7 @@ img {
         width: 180px;
     }
     .home__planet-1, .home__planet-2 {
-        width: 35%;
+        width: 90px;
     }
     .footer__content {
         gap: 2.5rem;
@@ -600,3 +600,18 @@ img {
 }
 
 /*==========Media Query==========*/
+@media (min-width: 576px) {
+    .home__container, .about__container {
+        grid-template-columns: .6fr;
+        justify-content: center;
+    }
+    .home__planet-1, .home__planet-2 {
+        width: 180px;
+    }
+    .gallery__container, .category__container {
+        grid-template-columns: repeat(2, 250px);
+    }
+    .footer__content {
+        grid-template-columns: repeat(3, max-content);
+    }
+}
