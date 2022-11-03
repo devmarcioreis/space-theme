@@ -403,3 +403,28 @@ img {
     top: 25rem;
     left: -4rem;
 }
+
+/*==========About==========*/
+.about {
+    position: relative;
+}
+.about__container {
+    row-gap: 3.5rem;
+}
+.about__data {
+    text-align: center;
+}
+.about__container .section__title {
+    margin-bottom: 1rem;
+}
+.about__description {
+    margin-bottom: 2rem;
+}
+.about__img {
+    width: 300px;
+    justify-self: center;
+}
+.about .small {
+    top: 2rem;
+    right: -3rem;
+}
