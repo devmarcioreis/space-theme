@@ -254,7 +254,7 @@ img {
     right: -10rem;
 }
 .home__container {
-    padding-top: 3.5rem;
+    padding-top: 1.5rem;
 }
 .home__data {
     text-align: center;
@@ -575,3 +575,28 @@ img {
 .show-scroll {
     bottom: 2rem;
 }
+
+
+/*==========Media Query==========*/
+@media (max-width: 340px) {
+    .container {
+        margin-inline: 1rem;
+    }
+    .home__title {
+        font-size: 1.5rem;
+    }
+    .gallery__container {
+        grid-template-columns: 180px;
+    }
+    .home__img {
+        width: 180px;
+    }
+    .home__planet-1, .home__planet-2 {
+        width: 35%;
+    }
+    .footer__content {
+        gap: 2.5rem;
+    }
+}
+
+/*==========Media Query==========*/
