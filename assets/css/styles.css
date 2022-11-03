@@ -218,6 +218,12 @@ img {
     background: var(--body-color);
     box-shadow: 0 4px 8px #06050566;
 }
+.active-link {
+    color: var(--first-color);
+}
+.show-scroll {
+    bottom: 3rem;
+}
 
 /*==========Home==========*/
 .home {
@@ -537,4 +543,35 @@ img {
 .footer .big {
     top: 30rem;
     right: -10rem;
+}
+
+/*==========Scroll Bar==========*/
+::-webkit-scrollbar {
+    width: .5rem;
+    border-radius: .5rem;
+    background: #1c1917;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: .5rem;
+    background: var(--first-color);
+}
+
+/*==========Scroll==========*/
+.scrollup {
+    position: fixed;
+    display: inline-flex;
+    right: 1rem;
+    bottom: -50%;
+    color: var(--first-color);
+    font-size: 1.5rem;
+    transition: bottom .3s, transform .3s;
+    z-index: var(--z-tooltip);
+}
+.scrollup:hover {
+    transform: translateY(-.24rem);
+}
+
+/*==========JavaScript==========*/
+.show-scroll {
+    bottom: 2rem;
 }
