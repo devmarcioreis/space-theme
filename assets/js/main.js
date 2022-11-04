@@ -55,3 +55,20 @@ const scrollUp = () => {
     this.scrollY >= 550 ? scrollUp.classList.add('show-scroll') : scrollUp.classList.remove('show-scroll')
 }
 window.addEventListener('scroll', scrollUp)
+
+
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '60px',
+    duration: 2500,
+    delay: 400,
+    // reset: true
+})
+
+sr.reveal(`.home__data`)
+sr.reveal(`.home__planet-1`, {origin: 'left', delay: 800} )
+sr.reveal(`.home__planet-2`, {origin: 'right', delay: 800} )
+sr.reveal(`.category`, {origin: 'bottom', delay: 700} )
+sr.reveal(`.about`, {origin: 'top', delay: 500} )
+sr.reveal(`.gallery__img`, {origin: 'top', delay: 800} )
+sr.reveal(`.footer`, {origin: 'bottom', delay: 500} )
